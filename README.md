@@ -5,4 +5,4 @@ Using HMM for clustering.
 1. a discrete HMM model implement in python
 2. generate data (Continuous)
 ### TO DO
-1. make classification
+1. clustering
