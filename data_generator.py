@@ -10,7 +10,7 @@ def hmm_generator(transition_matrix, initial_prob, mean, sd, length):
     for _ in range(length):
         res.append(np.random.normal(mean[cur_state], sd[cur_state]))
         cur_state = np.random.choice(range(len(initial_prob)), 1, True, transition_matrix[cur_state])[0]
-    return res
+    return np.array(res)
 
 
 class hmm_mixture_generator():
